@@ -8,11 +8,30 @@ def numbers():
                  int(input("Введите число B: ")), \
                  int(input("Введите число C: ")), \
                  int(input("Введите число D: "))
-    return a, b, c, d
-
-def minValue(a, b, c, d):
+    return list([a, b, c, d])
 
 
-A, B, C, D = numbers()
+def minValue():
+    minNum = numbersList[0]
+    for i in numbersList:
+        if minNum >= i:
+            minNum = i
+    print(minNum)
 
 
+def maxValue():
+    maxNum = numbersList[0]
+    for i in numbersList:
+        if maxNum <= i:
+            maxNum = i
+    print(maxNum)
+
+
+numbersList = list
+
+try:
+    numbersList = numbers()
+    maxValue()
+    minValue()
+except ValueError:
+    print("Вводите целые числа")
