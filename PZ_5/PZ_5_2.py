@@ -11,27 +11,11 @@ def numbers():
     return list([a, b, c, d])
 
 
-def minValue():
-    minNum = numbersList[0]
-    for i in numbersList:
-        if minNum >= i:
-            minNum = i
-    print(minNum)
-
-
-def maxValue():
-    maxNum = numbersList[0]
-    for i in numbersList:
-        if maxNum <= i:
-            maxNum = i
-    print(maxNum)
-
-
 numbersList = list
 
 try:
     numbersList = numbers()
-    maxValue()
-    minValue()
+    print(min(numbersList))
+    print(max(numbersList))
 except ValueError:
     print("Вводите целые числа")
