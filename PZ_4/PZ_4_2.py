@@ -9,6 +9,7 @@ i = 0
 result = False
 
 while a >= 1:
+    print(1)
     i += 1
     r = a % 10
     if r == 2:

@@ -11,7 +11,7 @@ def numbers():
     return list([a, b, c, d])
 
 
-numbersList = list
+numbersList = []
 
 try:
     numbersList = numbers()
